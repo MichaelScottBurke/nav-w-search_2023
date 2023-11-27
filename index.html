@@ -1,0 +1,66 @@
+<div class="msb-app-shell">
+  <div class="msb-side-nav-container">
+    <div id='side-nav' class="msb-side-nav">
+      <div class="msb-side-nav-header">
+        <input type="search" id="searchInput" placeholder="Search..." />
+        <button class="msb-icon-button" id="btn-clear-search">x</button>
+        <button class="msb-icon-button" id="btn-nav-options-menu">...</button>
+        <div id="nav-options-menu" class="msb-menu msb-hide">
+          <button class="msb-menu-item" id="btn-expand-all">Expand all</button>
+          <button class="msb-menu-item" id="btn-collapse-all">Collapse all</button>
+          <button class="msb-menu-item" id="btn-sort-alpha">Sort alphabetically</button>
+          <button class="msb-menu-item" id="btn-sort-default">Sort default</button>
+        </div>
+      </div>
+      <nav class='msb-side-nav-content-container' id="ui-container">
+        <div class="msb-side-nav-content">
+          <!-- nav level 0: tabs -->
+          <div class='tabs-container' id="tabs-container"></div>
+          <!-- child nav (paged nav) -->
+          <div class='child-nav msb-hide' id='child-nav'>
+            <button id="btn-nav-back" class="msb-icon-button"><-</button>
+          </div>
+           <!-- nav levels 1+ -->
+           <div class="navigation-main-container">
+          <ul class='navigation-container' id="navigation-ul"></ul>
+           </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div id='main-container' class="msb-main-container">
+    <div id='nav-header' class="msb-nav-header">
+      <div class='msb-nav-header-start-slot'>
+      <div id='nav-header-nav-icons' class='msb-nav-header-nav-icons'>
+        <button id='btn-menu'class="msb-icon-button_on-dark">=</button>
+        <button id='btn-back'class="msb-icon-button_on-dark"><</button>
+      </div>
+      <div id='nav-header-text' class='msb-nav-header-text'>
+          <div id='app-title' class='msb-app-title'>Title</div>
+          <div id='app-title' class='msb-app-subtitle'>Subtitle</div>
+      </div>
+      <div id='nav-header-logo'  class='msb-nav-header-logo'>
+        <img class='nav-header-logo-img' src=''>
+      </div>
+      </div>
+      <div class='msb-nav-header-end-slot'>
+      <div id='nav-header-search'  class='msb-nav-header-search'>
+      <input id='inpt-nav-header-search' class='msb-inpt-nav-header-search' type='search'>
+      </div>
+      <div id='nav-header-icons'  class='msb-nav-header-icons'>
+          <button class="msb-icon-button_on-dark">1</button>
+          <button class="msb-icon-button_on-dark">2</button>
+          <button class="msb-icon-button_on-dark">3</button>
+          <button class="msb-icon-button_on-dark">4</button>
+          
+      </div>
+      </div>
+    </div>
+    <div class="msb-main-content-container">
+      <main class="msb-main-content">Home</main>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- <script type="module" defer src="./nav.js"></script> -->
